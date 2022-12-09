@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="static/css/stylesheet.css" />
+    </head>
+    <body>
+        <hr>
+        <h1 id="title">
+            Remote Controller<br> for Radio Controller with Raspberry Pi
+        </h1>
+        <hr>
+            <div id="main">
+                <div id="button_area">
+                    <h2>
+                        Control State
+                    </h2>
+                    <form id="ctrl" action="/index" method="POST">
+                        <div class="ctl_button">
+                            <button type="submit" name="ctrl" value="go">GO</button>
+                        </div>
+                        <div class="ctl_button">
+                            <button type="submit" name="ctrl" value="stop">STOP</button>
+                        </div>
+                        <div class="ctl_button">
+                            <button type="submit" name="ctrl" value="back">BACK</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="range_area">
+                    <h2>
+                        Change Speed
+                    </h2>
+                    <div class="ctl_range">
+                        <input type="range" step="1" min="0" max="6" value="0" name="ctrl" form="Speed">
+                    </div>
+                    <form id="Speed" action="/index" method="POST">
+                        <div class="ctl_range">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        <hr>
+    </body>
+    <footer>
+        <div id="foot">
+            <div id="profile">
+                <h3>
+                    Ryoichi Satoh<br>
+                    Blog: <a href="https://toryoblog.com">https://toryoblog.com</a><br>
+                    Twitter: <a href="https://twitter.com/toryoblog">@toryoblog</a><br>
+                </h3>
+            </div>
+            <div id="logo">
+                <img src="static/img/logo.png">
+            </div>
+        </div>
+    </footer>
+</html>

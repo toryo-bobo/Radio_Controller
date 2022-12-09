@@ -1,0 +1,48 @@
+.button {
+  appearance: none;
+  border: 0;
+  border-radius: 5%;
+  background: #4676D7;
+  color: #fff;
+  padding: 20pt;
+  margin: 2% 5%;
+  font-size: 20pt;
+}
+
+.button:hover{
+    background: #1d49aa;
+}
+
+.button:focus{
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+#title{
+    height: 5%;
+    text-align: center;
+}
+
+.control{
+    width: 100%;
+    float: center;
+}
+
+.control_area{
+    height: 80pt;
+    text-align: center;
+}
+
+#tr, #stop, #tl{
+    width: 150px;
+    padding: 20px;
+    margin: 2pt;
+    font-size: 20pt;
+}
+
+#go, #back{
+    width: 150px;
+    padding: 20px;
+    margin: 2pt;
+    font-size: 20pt;
+}
